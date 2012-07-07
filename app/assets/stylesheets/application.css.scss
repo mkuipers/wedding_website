@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #737376;
+}
+
+ul {
+  list-style-type: none;
+  height: 80px;
+  margin: auto;
+  float: center;
+}
+
+li {
+  float: center;
+  display: inline-block;
+}
+
+#page {
+  text-align: center;
+}

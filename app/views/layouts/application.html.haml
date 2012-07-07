@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+%html{ :lang => 'en' }
+  %head
+    =render 'layouts/head'
+  %body
+    #page
+      #header
+        =link_to root_path do 
+          = image_tag '/images/header_image.png', :alt => 'IN HOLY MATRIMONY'
+      #navigation
+        %ul 
+          %li 
+            .navitem= link_to 'HOTELS', '/hotels'
+          %li
+            .navitem= link_to 'SCHEDULE', '/schedule'
+          %li 
+            .navitem= link_to 'DIRECTIONS', '/directions'
+          %li
+            .navitem= link_to 'RSVP', '/directions'
+          %li
+            .navitem= link_to 'WEDDING REGISTRY', '/registry'
+      #content 
+        = render :partial => 'layouts/flash', :locals => { :flash => flash }
+        = yield
+      
+      #footer
+        %ul
+          %li= 'Thanks to Grace for Graphic design'
+          %li= 'Website created by Max Kuipers'
+
