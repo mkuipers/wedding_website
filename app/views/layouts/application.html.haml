@@ -3,11 +3,11 @@
 %html{ :lang => 'en' }
   %head
     =render 'layouts/head'
-  %body
+  %body.plain
     #page
       #header
         =link_to root_path do 
-          = image_tag '/images/header_image.png', :alt => 'IN HOLY MATRIMONY'
+          = image_tag 'header_image.png', :alt => 'IN HOLY MATRIMONY'
       #navigation
         %ul 
           %li 

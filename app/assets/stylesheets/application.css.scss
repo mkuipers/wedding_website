@@ -3,22 +3,47 @@
   padding: 0;
 }
 
-body {
+body.plain {
   background-color: #737376;
-}
-
-ul {
-  list-style-type: none;
-  height: 80px;
-  margin: auto;
-  float: center;
-}
-
-li {
-  float: center;
-  display: inline-block;
-}
-
-#page {
   text-align: center;
+
+  ul {
+    list-style-type: none;
+    height: 80px;
+    margin: auto;
+    float: center;
+  }
+
+  li {
+    float: center;
+    display: inline-block;
+  }
+
+
+  #header img {
+    height: 200px;
+  }
+
+  #navigation { 
+    margin-top: 30px; 
+    font-size: 30px;
+  }
+
+
+
+  #page {
+    width: 750px; 
+    background-color: white;
+    text-align: center;
+    font-family: Century Gothic, sans-serif;
+    font-size: 12px;
+  }
+
+
+
+
+
+
 }
+
+  

@@ -2,18 +2,25 @@
   margin: 0;
   padding: 0; }
 
-body {
-  background-color: #737376; }
-
-ul {
-  list-style-type: none;
-  height: 80px;
-  margin: auto;
-  float: center; }
-
-li {
-  float: center;
-  display: inline-block; }
-
-#page {
+body.plain {
+  background-color: #737376;
   text-align: center; }
+  body.plain ul {
+    list-style-type: none;
+    height: 80px;
+    margin: auto;
+    float: center; }
+  body.plain li {
+    float: center;
+    display: inline-block; }
+  body.plain #header img {
+    height: 200px; }
+  body.plain #navigation {
+    margin-top: 30px;
+    font-size: 30px; }
+  body.plain #page {
+    width: 750px;
+    background-color: white;
+    text-align: center;
+    font-family: Century Gothic, sans-serif;
+    font-size: 12px; }
