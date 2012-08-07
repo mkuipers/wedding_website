@@ -14,26 +14,29 @@ body.plain {
     font-size: 20px; }
     body.plain #navigation ul {
       list-style-type: none;
-      height: 80px;
+      height: 50px;
       margin: auto;
       float: center; }
     body.plain #navigation li {
+      width: 15%;
       float: center;
-      display: inline-block; }
+      display: inline-block;
+      margin-bottom: 0px; }
     body.plain #navigation a {
       color: black;
       text-decoration: none;
       padding-top: 32px; }
-      body.plain #navigation a img {
-        -webkit-box-shadow: 0 10px 10px -4px black;
-        -moz-box-shadow: 0 10px 10px -4px black;
-        box-shadow: 0 10px 10px -4px black; }
       body.plain #navigation a img.mouseover {
         display: none; }
       body.plain #navigation a:hover {
         padding-top: 0px; }
-        body.plain #navigation a:hover img {
-          display: inline-block; }
+        body.plain #navigation a:hover img.mouseover {
+          display: inline-block;
+          padding-left: 20px;
+          padding-right: 20px;
+          -webkit-box-shadow: 0 -10px 20px -10px black;
+          -moz-box-shadow: 0 -10px 20px -10px black;
+          box-shadow: 0 -10px 20px -10px black; }
         body.plain #navigation a:hover img.placeholder {
           display: none; }
         body.plain #navigation a:hover span.navitemtext {
@@ -51,3 +54,6 @@ body.plain {
     text-align: center;
     font-family: Century Gothic, sans-serif;
     font-size: 12px; }
+    body.plain #page img.hdiv {
+      margin-top: 25px;
+      margin-bottom: 25px; }

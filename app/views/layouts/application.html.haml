@@ -24,15 +24,30 @@
               %span.navitemtext SCHEDULE
 
           %li 
-            .navitem= link_to 'DIRECTIONS', '/directions'
+            = link_to '/directions', :class => 'navitem' do
+              = image_tag("suitcase1.png", :class => 'placeholder', :height => '32px')
+              = image_tag("feet.png", :class => 'mouseover', :height => '32px')
+              %br
+              %span.navitemtext DIRECTIONS 
+
           %li
-            .navitem= link_to 'RSVP', '/directions'
+            = link_to '/rsvp', :class => 'navitem' do
+              = image_tag("suitcase1.png", :class => 'placeholder', :height => '32px')
+              = image_tag("feet.png", :class => 'mouseover', :height => '32px')
+              %br
+              %span.navitemtext RSVP 
           %li
-            .navitem= link_to 'WEDDING REGISTRY', '/registry'
+            = link_to '/registry', :class => 'navitem' do
+              = image_tag("suitcase1.png", :class => 'placeholder', :height => '32px')
+              = image_tag("feet.png", :class => 'mouseover', :height => '32px')
+              %br
+              %span.navitemtext REGISTRY
+      =image_tag("hdiv.png", :class => "hdiv" )
       #content 
         = render :partial => 'layouts/flash', :locals => { :flash => flash }
         = yield
       
+      =image_tag("hdiv.png", :class => "hdiv" )
       #footer
         %ul
           %li= 'Thanks to Grace for Graphic design'

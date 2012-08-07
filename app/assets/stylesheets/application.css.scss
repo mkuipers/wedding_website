@@ -26,14 +26,16 @@ body.plain {
     font-size: 20px;
     ul {
       list-style-type: none;
-      height: 80px;
+      height: 50px;
       margin: auto;
       float: center;
     }
 
     li {
+      width: 15%;
       float: center;
       display: inline-block;
+      margin-bottom: 0px
     }
 
 
@@ -42,15 +44,17 @@ body.plain {
       text-decoration: none;
       padding-top: 32px;
       img {
-        @include all-boxshadow(0, 10px, 10px, -4px, black);
       }
       img.mouseover {
         display: none;
       }
       &:hover {
         padding-top: 0px;
-        img {
+        img.mouseover {
           display: inline-block;
+          padding-left: 20px;
+          padding-right: 20px;
+          @include all-boxshadow(0, -10px, 20px, -10px, black);
         }
         img.placeholder {
           display: none;
@@ -76,6 +80,11 @@ body.plain {
     text-align: center;
     font-family: Century Gothic, sans-serif;
     font-size: 12px;
+
+    img.hdiv {
+      margin-top: 25px;    
+      margin-bottom: 25px;
+    }
   }
 
   
