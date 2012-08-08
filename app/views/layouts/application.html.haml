@@ -9,39 +9,7 @@
         =link_to root_path do 
           = image_tag 'header_image.png', :alt => 'IN HOLY MATRIMONY'
       #navigation
-        %ul 
-          %li
-            = link_to '/hotels', :class => 'navitem' do
-              = image_tag("suitcase1.png", :class => 'placeholder', :height => '32px')
-              = image_tag("feet.png", :class => 'mouseover', :height => '32px')
-              %br
-              %span.navitemtext HOTELS
-          %li
-            = link_to '/schedule', :class => 'navitem' do
-              = image_tag("suitcase1.png", :class => 'placeholder', :height => '32px')
-              = image_tag("feet.png", :class => 'mouseover', :height => '32px')
-              %br
-              %span.navitemtext SCHEDULE
-
-          %li 
-            = link_to '/directions', :class => 'navitem' do
-              = image_tag("suitcase1.png", :class => 'placeholder', :height => '32px')
-              = image_tag("feet.png", :class => 'mouseover', :height => '32px')
-              %br
-              %span.navitemtext DIRECTIONS 
-
-          %li
-            = link_to '/rsvp', :class => 'navitem' do
-              = image_tag("suitcase1.png", :class => 'placeholder', :height => '32px')
-              = image_tag("feet.png", :class => 'mouseover', :height => '32px')
-              %br
-              %span.navitemtext RSVP 
-          %li
-            = link_to '/registry', :class => 'navitem' do
-              = image_tag("suitcase1.png", :class => 'placeholder', :height => '32px')
-              = image_tag("feet.png", :class => 'mouseover', :height => '32px')
-              %br
-              %span.navitemtext REGISTRY
+        =render 'layouts/nav'
       =image_tag("hdiv.png", :class => "hdiv" )
       #content 
         = render :partial => 'layouts/flash', :locals => { :flash => flash }
