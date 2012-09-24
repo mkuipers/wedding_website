@@ -10,11 +10,11 @@ There will also be an administrative interface for managing guests, invitation g
 1. Write unit tests for the RSVP (registrations) controller. Let's do this TDD style from the bottom up!
 2. Write the RSVP controller
 3. Implement the front-facing RSVP views for just the standard website.
-* Will want to also implement action-mailer to deliver confirmation emails 
+  * Will want to also implement action-mailer to deliver confirmation emails 
 4. Implement the administrative interface.
-* Use Devise and Can Can to limit exposure of certain fields to admin user vs. anonymous user
-* How to use devise and not require login for guests?
-* Add unique code for each guest to verify identity, include code on physical invitation.  Does not need to be super secure.  
+  * Use Devise and Can Can to limit exposure of certain fields to admin user vs. anonymous user
+  * How to use devise and not require login for guests?
+  * Add unique code for each guest to verify identity, include code on physical invitation.  Does not need to be super secure.  
 5. Implement for mobile site.
 6. Transfer from Heroku hosting to personal hosting. Set up capistrano, etc.
 7. Get married. 
