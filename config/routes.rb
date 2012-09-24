@@ -1,4 +1,8 @@
 WeddingWebsite::Application.routes.draw do
+  resources :invitations
+
+  resources :guests
+
   match '/hotels' => 'static_pages#hotels'
   match '/schedule' => 'static_pages#schedule'
   match '/directions' => 'static_pages#directions'
